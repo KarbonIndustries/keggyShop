@@ -1,0 +1,13 @@
+product
+  |
+  + -- name
+  |
+  + -- id
+  |
+  + -- quantity
+  |
+  + -- price
+  |
+  + -- options
+         |
+         + -- strap_color

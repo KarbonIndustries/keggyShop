@@ -1,1 +1,5 @@
-images/
+inc/flourish/
+inc/dir_config.php
+inc/init.php
+public/images/
+
