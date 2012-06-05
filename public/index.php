@@ -1,5 +1,14 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php');
+$json = new fFile(JS_DIR . 'products.json');
+$db = json_decode($json->read(),true);
+#echo '<pre>';
+#var_dump($db->{'products'});
+#echo '</pre>';
+#echo '<pre>';
+#var_dump($db);
+#echo '</pre>';
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
