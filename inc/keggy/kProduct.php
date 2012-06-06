@@ -11,26 +11,34 @@
 
 class kProduct
 {
-	private static $DEFAULT_QUANTITY     = 0;
+	const REQUIRED_COLOR_KEYS  = 'name,id';
+	const REQUIRED_OPTION_KEYS = 'name,value';
+
+	private static $REQUIRED_COLOR_KEYS;
+	private static $REQUIRED_OPTION_KEYS;
 	private static $DEFAULT_PRICE        = 0;
 	private static $DEFAULT_PRODUCT_TYPE = 'Generic';
 
 	private $name,
 			$type,
 			$id,
-			$quantity,
 			$price,
+			$color,
 			$options;
 	
-	function __construct($name = null,$type = null,$id = null,$price = null,Array $options = null)
+	function __construct(&$name = null,&$type = null,&$id = null,&$price = null,Array &$color = null,Array &$options = null)
 	{
 		$this->name     = $name;
 		$this->type     = is_string($type) && $type ? $type : self::$DEFAULT_PRODUCT_TYPE;
 		$this->id       = self::isValidId($id) ? $id : null;
 		fMoney::setDefaultCurrency(USD);
-		$this->price    = new fMoney(self::isValidCurrency($price) ? $price : self::$DEFAULT_PRICE);
+		$this->price                = new fMoney(self::isValidCurrency($price) ? $price : self::$DEFAULT_PRICE);
+		self::$REQUIRED_COLOR_KEYS  = explode(',',self::REQUIRED_COLOR_KEYS);
+		self::$REQUIRED_OPTION_KEYS = explode(',',self::REQUIRED_OPTION_KEYS);
+		$this->color                = is_array($color) && self::isValidColorSet($color) ? $color : array();
+		$this->options              = is_array($options) && self::isValidOptionSet($options) ? $options : array();
 
-		if(!empty($options))
+		if(is_array($options) && !empty($options))
 		{
 			foreach($options as $k => $v)
 			{
@@ -45,7 +53,7 @@ class kProduct
 		}
 	}
 
-	public function name($v = null)
+	public function name(&$v = null)
 	{
 		if(is_null($v))
 		{
@@ -62,7 +70,7 @@ class kProduct
 		}
 	}
 
-	public function type($v = null)
+	public function type(&$v = null)
 	{
 		if(is_null($v))
 		{
@@ -79,7 +87,7 @@ class kProduct
 		}
 	}
 
-	public function id($v = null)
+	public function id(&$v = null)
 	{
 		if(is_null($v))
 		{
@@ -96,7 +104,7 @@ class kProduct
 		}
 	}
 
-	public function price($v = null)
+	public function price(&$v = null)
 	{
 		if(is_null($v))
 		{
@@ -113,7 +121,25 @@ class kProduct
 		}
 	}
 
-	public function options($k = null,$v = null)
+	public function color(Array &$v = null)
+	{
+		if(is_null($v))
+		{
+			return $this->{__FUNCTION__};
+		}
+
+		if(self::isValidColorSet($v))
+		{
+			$this->{__FUNCTION__} += $v;
+			return $this;
+		}else
+		{
+			throw new Exception('Color must be a valid array');
+		}
+		
+	}
+
+	public function options(&$k = null,&$v = null)
 	{
 		if(is_string($k) && !empty($k) && is_null($v))
 		{
@@ -130,38 +156,57 @@ class kProduct
 		{
 			$this->{__FUNCTION__}[$k] = $v;
 			return $this;
-		}elseif(is_array($k) && !empty($k) && is_array($v) && !empty($v))
-		{
-			foreach($k as $key => $val)
-			{
-				echo '<pre>';
-				var_dump($key,$val);
-				echo '</pre>';
-				#$this->{__FUNCTION__}($key,$val);
-			}
-			return $this;
-		}elseif(is_array($k) && !empty($k) && is_null($v))
-		{
-
 		}else
 		{
 			throw new Exception('Option name must be a string and value must be an integer or string');
 		}
 	}
 
-	public static function isValidCurrency($v)
+	public static function isValidCurrency(&$v)
 	{
 		return ((is_int($v) && $v > 0) || preg_match('/^\$?\d+\.\d{1,2}$/',$v));
 	}
 
-	public static function isValidId($v)
+	public static function isValidId(&$v)
 	{
 		return preg_match('/^[A-z0-9_]{3,}$/',$v);
 	}
 
-	public static function isValidKeyValuePair($k,$v)
+	public static function isValidKeyValuePair(&$k,&$v)
 	{
-		return (is_string($k) && !empty($k)) && (is_int($v) || ((is_string($v) || is_array($v))  && !empty($v)));
+		return (is_string($k) && !empty($k)) && (is_int($v) || (is_string($v)  && !empty($v)));
+	}
+
+	public static function isValidColorSet(Array &$a)
+	{
+		if(!empty($a))
+		{
+			foreach($a as $v)
+			{
+				if(empty($v) || array_keys($v) !== self::$REQUIRED_COLOR_KEYS)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+		return false;
+	}
+
+	public static function isValidOptionSet(Array &$a)
+	{
+		if(!empty($a))
+		{
+			foreach($a as $v)
+			{
+				if(empty($v) || array_keys($v) !== self::$REQUIRED_OPTION_KEYS)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+		return false;
 	}
 
 	function __toString()

@@ -3,7 +3,7 @@ require_once('domain.php');
 define('DS',DIRECTORY_SEPARATOR);
 define('FS', '/');
 define('PD','..' . DS);
-define('ROOT', $_SERVER['DOCUMENT_ROOT'] . DS);
+require_once('root.php');
 require_once('dir_config.php');
 # MISC
 define('HTTP_PFX','http://');

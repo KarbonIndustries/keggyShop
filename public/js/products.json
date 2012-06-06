@@ -6,273 +6,221 @@
 			"id"      : "B820EFR",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (Pink Flambe)",
 			"id"      : "B820EPF",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (Sweet Sage)",
 			"id"      : "B820ESS",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (Sunshine)",
 			"id"      : "B820ESU",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (Tangerine)",
 			"id"      : "B820ETT",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (Ultramarine Green)",
 			"id"      : "B820EUG",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Buckle (White)",
 			"id"      : "B820EWH",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Circle Cutout Buckle (Rhinestones)",
 			"id"      : "B840R",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Dome Enamel Dot Buckle (French Roast)",
 			"id"      : "B850EFR",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Dome Enamel Dot Buckle (Ultramarine Green)",
 			"id"      : "B850EUG",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Rhinestone Buckle",
 			"id"      : "B860R",
 			"type"    : "Belt",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Nickel", "id" : "01"},
-												{"name" : "Gold"  , "id" : "02"}
-											],
-							"strap_color" : "all"
-						}
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
 		},
 		{
 			"name"    : "Square Enamel Ring (Kelly Green)",
 			"id"      : "R820EKG",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Square Enamel Ring (White)",
 			"id"      : "R820EWH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Square Enamel Ring (Pumpkin)",
 			"id"      : "R820EPU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Square Enamel Ring (Chilly)",
 			"id"      : "R820ECH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Square Cutout Ring",
 			"id"      : "R830",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Circle Enamel Dots Ring (White)",
 			"id"      : "R850EWH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Silver", "id" : "01"}
-											]
-						}
+			"color"   : [{"name" : "Silver"  , "id" : "01"}]
 		},
 		{
 			"name"    : "Circle Enamel Dots Ring (Indigo)",
 			"id"      : "R850EIN",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Sunshine)",
 			"id"      : "R870ESU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Cerise)",
 			"id"      : "R870ECE",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Pumpkin)",
 			"id"      : "R870EPU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Kelly Green)",
 			"id"      : "R870EKG",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Chilly)",
 			"id"      : "R870ECH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"options" : {
-							"finish"      : [
-												{"name" : "Gold"  , "id" : "02"}
-											]
-						}
+			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		}
 	],
 	"belt_colors" :

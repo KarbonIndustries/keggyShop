@@ -1,7 +1,7 @@
 <?php
 class kProductManager
 {
-	const REQUIRED_PRODUCT_KEYS = 'name,type,id,price,options';
+	const REQUIRED_PRODUCT_KEYS = 'name,type,id,price,color';
 
 	private static $_requiredProductKeys;
 	private static $_dbLoaded;
@@ -24,6 +24,7 @@ class kProductManager
 				{
 					self::$_requiredProductKeys = explode(',',self::REQUIRED_PRODUCT_KEYS);
 					self::$_db = array();
+					
 					foreach(self::$_rawProducts as $p)
 					{
 						if(self::keysExist(self::$_requiredProductKeys,$p))
@@ -35,7 +36,7 @@ class kProductManager
 								$product->{$k}($p[$k]);
 								next(self::$_requiredProductKeys);
 							}
-							#self::$_db[] = new kProduct($p['name'],$p['type'],$p['id'],$p['price'],$p['options']);
+							self::$_db[] = $product;
 						}else
 						{
 							throw new Exception('Product(s) missing required keys');
@@ -66,15 +67,14 @@ class kProductManager
 				{
 					if(strtolower($p->type()) === strtolower($t))
 					{
-						$result[] = $t;
+						$result[] = $p;
 					}
 				}
+				return $result;
 			}else
 			{
 				throw new Exception('Invalid product type');
 			}
-
-			return $result;
 		}else
 		{
 			throw new Exception('No products in database');
@@ -105,6 +105,21 @@ class kProductManager
 		{
 			throw new Exception('No products in database');
 		}
+	}
+
+	public static function getProductById($id)
+	{
+		if(is_string($id) && !empty($id))
+		{
+			foreach(self::$_db as $p)
+			{
+				if($p->id() === $id)
+				{
+					return $p;
+				}
+			}
+		}
+		return null;
 	}
 
 	public static function getAllProducts()

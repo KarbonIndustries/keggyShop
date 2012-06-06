@@ -1,13 +1,17 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php');
+require_once('..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php');
+
 kProductManager::loadProductDatabase(JS_DIR . 'products.json','products');
-$belts = kProductManager::getProductsByType('belt');
-#echo '<pre>';
-#var_dump($db->{'products'});
-#echo '</pre>';
-#echo '<pre>';
-#var_dump($db);
-#echo '</pre>';
+
+$products;
+
+try
+{
+	$products = kProductManager::getAllProducts();
+}catch(Exception $e)
+{
+	echo $e->getMessage();
+}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -15,9 +19,16 @@ $belts = kProductManager::getProductsByType('belt');
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title>Keggy Shop</title>
-	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" charset="utf-8">
+	<link rel="stylesheet" href="<?= CSS_DIR ?>styles.css" type="text/css" media="all" charset="utf-8">
 </head>
 <body>
-
+	<div id="content">
+		<?php
+			foreach($products as $p)
+			{
+				#echo $p->name() . '<br />';
+			}
+		?>
+	</div>
 </body>
 </html>
