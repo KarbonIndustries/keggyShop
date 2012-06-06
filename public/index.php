@@ -1,7 +1,7 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php');
-$json = new fFile(JS_DIR . 'products.json');
-$db = json_decode($json->read(),true);
+kProductManager::loadProductDatabase(JS_DIR . 'products.json','products');
+$belts = kProductManager::getProductsByType('belt');
 #echo '<pre>';
 #var_dump($db->{'products'});
 #echo '</pre>';

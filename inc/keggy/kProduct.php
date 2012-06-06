@@ -11,7 +11,7 @@
 
 class kProduct
 {
-	private static $DEFAULT_QUANTITY     = 1;
+	private static $DEFAULT_QUANTITY     = 0;
 	private static $DEFAULT_PRICE        = 0;
 	private static $DEFAULT_PRODUCT_TYPE = 'Generic';
 
@@ -22,12 +22,11 @@ class kProduct
 			$price,
 			$options;
 	
-	function __construct($name = null,$type = null,$id = null,$quantity = null,$price = null,Array $options = null)
+	function __construct($name = null,$type = null,$id = null,$price = null,Array $options = null)
 	{
 		$this->name     = $name;
 		$this->type     = is_string($type) && $type ? $type : self::$DEFAULT_PRODUCT_TYPE;
 		$this->id       = self::isValidId($id) ? $id : null;
-		$this->quantity = $quantity && is_int($quantity) ? $quantity : self::$DEFAULT_QUANTITY;
 		fMoney::setDefaultCurrency(USD);
 		$this->price    = new fMoney(self::isValidCurrency($price) ? $price : self::$DEFAULT_PRICE);
 
@@ -97,23 +96,6 @@ class kProduct
 		}
 	}
 
-	public function quantity($v = null)
-	{
-		if(is_null($v))
-		{
-			return $this->{__FUNCTION__};
-		}
-
-		if(is_int($v))
-		{
-			$this->{__FUNCTION__} = $v;
-			return $this;
-		}else
-		{
-			throw new Exception('Quantity must be a valid integer');
-		}
-	}
-
 	public function price($v = null)
 	{
 		if(is_null($v))
@@ -148,6 +130,19 @@ class kProduct
 		{
 			$this->{__FUNCTION__}[$k] = $v;
 			return $this;
+		}elseif(is_array($k) && !empty($k) && is_array($v) && !empty($v))
+		{
+			foreach($k as $key => $val)
+			{
+				echo '<pre>';
+				var_dump($key,$val);
+				echo '</pre>';
+				#$this->{__FUNCTION__}($key,$val);
+			}
+			return $this;
+		}elseif(is_array($k) && !empty($k) && is_null($v))
+		{
+
 		}else
 		{
 			throw new Exception('Option name must be a string and value must be an integer or string');
@@ -166,7 +161,7 @@ class kProduct
 
 	public static function isValidKeyValuePair($k,$v)
 	{
-		return (is_string($k) && !empty($k)) && (is_int($v) || (is_string($v) && !empty($v)));
+		return (is_string($k) && !empty($k)) && (is_int($v) || ((is_string($v) || is_array($v))  && !empty($v)));
 	}
 
 	function __toString()
