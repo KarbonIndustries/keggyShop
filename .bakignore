@@ -2,4 +2,5 @@ inc/flourish/
 public/css/images/
 public/css/jquery*
 public/img/
-public/js/jquery/
+public/js/jquery*
+public/js/accounting.js

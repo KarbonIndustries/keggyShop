@@ -2,8 +2,69 @@
 	"products" :
 	[
 		{
+			"name"    : "Square Enamel Buckle (Chilly Red)",
+			"id"      : "B820ECR",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
 			"name"    : "Square Enamel Buckle (French Roast)",
 			"id"      : "B820EFR",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Square Enamel Buckle (Heaven Blue)",
+			"id"      : "B820EHB",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Square Enamel Buckle (Kelly Green)",
+			"id"      : "B820EKG",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Square Enamel Buckle (Mint Green)",
+			"id"      : "B820EMG",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Square Enamel Buckle (Olympian Blue)",
+			"id"      : "B820EOB",
 			"type"    : "Belt",
 			"price"   : "39.00",
 			"color"   : [
@@ -113,6 +174,30 @@
 						]
 		},
 		{
+			"name"    : "Dome Enamel Dot Buckle (Mint Green)",
+			"id"      : "B850EMG",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Nickel", "id" : "01"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Dome Enamel Dot Buckle (Olympian Blue)",
+			"id"      : "B850EOB",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
 			"name"    : "Dome Enamel Dot Buckle (Ultramarine Green)",
 			"id"      : "B850EUG",
 			"type"    : "Belt",
@@ -132,6 +217,18 @@
 			"price"   : "39.00",
 			"color"   : [
 							{"name" : "Nickel", "id" : "01"},
+							{"name" : "Gold"  , "id" : "02"}
+						],
+			"options" : [
+							{"name" : "strap_color", "value" : "all"}
+						]
+		},
+		{
+			"name"    : "Square Cutout Buckle",
+			"id"      : "B830",
+			"type"    : "Belt",
+			"price"   : "39.00",
+			"color"   : [
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
@@ -223,21 +320,21 @@
 			"color"   : [{"name" : "Gold"  , "id" : "02"}]
 		}
 	],
-	"belt_colors" :
+	"strap_colors" :
 	[
-		{"color" : "Indigo"       , "color_id" : "IN"},
-		{"color" : "Chilly"       , "color_id" : "CH"},
-		{"color" : "Mushroom"     , "color_id" : "MU"},
-		{"color" : "Ivory"        , "color_id" : "IV"},
-		{"color" : "Pearl White"  , "color_id" : "PW"},
-		{"color" : "Turquise"     , "color_id" : "TU"},
-		{"color" : "Capri"        , "color_id" : "CA"},
-		{"color" : "Sweet Sage"   , "color_id" : "SS"},
-		{"color" : "Ceramic Pink" , "color_id" : "CP"},
-		{"color" : "Surf Elegance", "color_id" : "SE"},
-		{"color" : "Cerise"       , "color_id" : "CE"},
-		{"color" : "Pumpkin"      , "color_id" : "PU"},
-		{"color" : "Black"        , "color_id" : "BL"},
-		{"color" : "Sunshine"     , "color_id" : "SU"}
+		{"color_name" : "Indigo"       , "color_id" : "IN"},
+		{"color_name" : "Chilly"       , "color_id" : "CH"},
+		{"color_name" : "Mushroom"     , "color_id" : "MU"},
+		{"color_name" : "Ivory"        , "color_id" : "IV"},
+		{"color_name" : "Pearl White"  , "color_id" : "PW"},
+		{"color_name" : "Turquise"     , "color_id" : "TU"},
+		{"color_name" : "Capri"        , "color_id" : "CA"},
+		{"color_name" : "Sweet Sage"   , "color_id" : "SS"},
+		{"color_name" : "Ceramic Pink" , "color_id" : "CP"},
+		{"color_name" : "Surf Elegance", "color_id" : "SE"},
+		{"color_name" : "Cerise"       , "color_id" : "CE"},
+		{"color_name" : "Pumpkin"      , "color_id" : "PU"},
+		{"color_name" : "Black"        , "color_id" : "BL"},
+		{"color_name" : "Sunshine"     , "color_id" : "SU"}
 	]
 }

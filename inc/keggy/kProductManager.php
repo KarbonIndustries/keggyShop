@@ -24,7 +24,7 @@ class kProductManager
 				{
 					self::$_requiredProductKeys = explode(',',self::REQUIRED_PRODUCT_KEYS);
 					self::$_db = array();
-					
+
 					foreach(self::$_rawProducts as $p)
 					{
 						if(self::keysExist(self::$_requiredProductKeys,$p))
@@ -35,6 +35,20 @@ class kProductManager
 							{
 								$product->{$k}($p[$k]);
 								next(self::$_requiredProductKeys);
+							}
+
+							if(array_key_exists('options',$p))
+							{
+								foreach($p['options'] as $o)
+								{
+									try
+									{
+										$product->options($o['name'],$o['value']);
+									}catch(Exception $e)
+									{
+										throw $e;
+									}
+								}
 							}
 							self::$_db[] = $product;
 						}else

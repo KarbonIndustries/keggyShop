@@ -1,5 +1,8 @@
-inc/flourish/
 inc/dir_config.php
+inc/flourish/
 inc/init.php
-public/images/
-
+inc/paypal.php
+public/img/
+public/*.ico
+public/js/jquery*
+public/js/accounting.js

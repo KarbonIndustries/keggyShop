@@ -26,4 +26,7 @@ define('DEV_LONG_NAME','Karbon Interaktiv Inc');
 define('DEV_URL',HTTP_PFX . 'karboninc.com' . FS);
 # URLS
 define('FULL_APP_URL',HTTP_PFX . DOMAIN . '/');
+define('MAIN_SITE_URL',HTTP_PFX . 'keggy.com' . FS);
+# PRIVATE
+require_once(INC_DIR . 'paypal.php');
 ?>

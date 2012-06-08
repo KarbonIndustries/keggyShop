@@ -1,4 +1,3 @@
 <?php
 define('DOMAIN','keggyshop');
-
 ?>

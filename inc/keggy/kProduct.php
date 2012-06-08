@@ -139,8 +139,13 @@ class kProduct
 		
 	}
 
-	public function options(&$k = null,&$v = null)
+	public function options($k = null,&$v = null)
 	{
+		if(is_null($k))
+		{
+			return $this->{__FUNCTION__};
+		}
+
 		if(is_string($k) && !empty($k) && is_null($v))
 		{
 			if(array_key_exists($k,$this->{__FUNCTION__}))
@@ -158,8 +163,13 @@ class kProduct
 			return $this;
 		}else
 		{
-			throw new Exception('Option name must be a string and value must be an integer or string');
+			throw new Exception('Option name must be a string and value must be an integer, string, or array');
 		}
+	}
+
+	public function optionExists($v)
+	{
+		return is_string($v) && $v && array_key_exists($v,$this->options);
 	}
 
 	public static function isValidCurrency(&$v)
@@ -174,7 +184,7 @@ class kProduct
 
 	public static function isValidKeyValuePair(&$k,&$v)
 	{
-		return (is_string($k) && !empty($k)) && (is_int($v) || (is_string($v)  && !empty($v)));
+		return (is_string($k) && !empty($k)) && (is_int($v) || ((is_string($v) || is_array($v)) && !empty($v)));
 	}
 
 	public static function isValidColorSet(Array &$a)
