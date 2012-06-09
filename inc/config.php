@@ -1,13 +1,13 @@
 <?php
-require_once('domain.php');
+define('HTTP_PFX','http://');
+define('HTTPS_PFX','https://');
 define('DS',DIRECTORY_SEPARATOR);
 define('FS', '/');
 define('PD','..' . DS);
-require_once('root.php');
+require_once('_host.php');
+require_once('_root.php');
 require_once('dir_config.php');
 # MISC
-define('HTTP_PFX','http://');
-define('HTTPS_PFX','https://');
 define('EOL',PHP_EOL);
 define('NL',"\n");
 define('RN',"\r\n");
@@ -25,7 +25,6 @@ define('DEV_SHORT_NAME','Karbon');
 define('DEV_LONG_NAME','Karbon Interaktiv Inc');
 define('DEV_URL',HTTP_PFX . 'karboninc.com' . FS);
 # URLS
-define('FULL_APP_URL',HTTP_PFX . DOMAIN . '/');
 define('MAIN_SITE_URL',HTTP_PFX . 'keggy.com' . FS);
 # PRIVATE
 require_once(INC_DIR . 'paypal.php');

@@ -1,8 +1,9 @@
 <?php
-require_once('..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php');
+require_once('..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . '_init.php');
 
 $loadErrMsg = null;
 $itemErrMsg = null;
+
 try
 {
 	kProductManager::loadProductDatabase(JS_DIR . 'products.json','products');
@@ -45,10 +46,19 @@ if(!$loadErrMsg)
 	<div id="contentShell">
 		<h1 id="productItemTitle"><a href="./">Products</a> &raquo; <?= $p->name() ?></h1>
 		<div id="productItemImageShell">
-			<div id="productLrgImgShell"><img src="<?= IMG_DIR . strtolower($p->type()) . DS . IMG_SIZE_3_DIR . DS . $p->id() . '_01.jpg' ?>" alt="" /></div>
+			<div id="productLrgImgShell">
+				<img src="<?= IMG_DIR . strtolower($p->type()) . DS . IMG_SIZE_3_DIR . DS . $p->id() . '_01.jpg' ?>" alt="" />
+				<?php
+				$largeImgs = glob(IMG_DIR . strtolower($p->type()) . DS . IMG_SIZE_3_DIR . DS . $p->id() . '_*.jpg');
+				foreach($largeImgs as $i)
+				{?>
+					<span style="display:none;background:url(<?= $i ?>)"></span>
+				<?}?>
+			</div>
 			<div id="productItemThumbnails">
 				<?php
-				$thumbs = glob(IMG_DIR . strtolower($p->type()) . DS . IMG_SIZE_1_DIR . DS . $p->id() . '_*.jpg');
+				$thumbs    = glob(IMG_DIR . strtolower($p->type()) . DS . IMG_SIZE_1_DIR . DS . $p->id() . '_*.jpg');
+
 				foreach($thumbs as $t)
 				{?>
 					<a href="#"><img src="<?= $t ?>" alt="" /></a>
@@ -76,21 +86,30 @@ if(!$loadErrMsg)
 					<h3 class="productSwatchesTitle">Strap Colors</h3>
 					<ul id="swatchesShell">
 						<?php
+						if(function_exists('lcfirst') === false)
+						{
+						    function lcfirst($str) 
+						    {
+								return (string) (strtolower(substr($str,0,1)) . substr($str,1));
+							} 
+						} 
+
 						function toCSSName($v)
 						{
+
 							return preg_match('/\s/',$v) ? lcfirst(preg_replace('/\s/','',ucwords($v))) : lcfirst($v);
 						}
 
 						foreach($strapColors as $c)
 						{?>
-							<li class="swatchShell">
-								<span class="swatch <?= toCSSName($c['color_name']) ?>">
-									<span class="<?= toCSSName($c['color_name']) ?> largeSwatch"></span>
-								</span>
-								<span class="swatchLabel"><?= $c['color_name'] ?></span>
-							</li>
-						<?}?>
-						<div class="clearfix"></div>
+						<li class="swatchShell">
+							<span class="swatch <?= toCSSName($c['color_name']) ?>">
+								<span class="<?= toCSSName($c['color_name']) ?> largeSwatch"></span>
+							</span>
+							<span class="swatchLabel <?= $c['color_name'] ?>"><?= $c['color_name'] ?></span>
+						</li>
+					<?}?>
+					<div class="clearfix"></div>
 					</ul>
 
 					<div id="productItemStrapColorShell">
@@ -222,6 +241,7 @@ if(!$loadErrMsg)
 	{
 		curThumbURL = $(this).attr('src');
 		imgShell.find('img').attr('src',curThumbURL.replace(thumbSizeMarker,largeSizeMarker));
+		return false;
 	});
 
 	<?php
@@ -236,7 +256,6 @@ if(!$loadErrMsg)
 
 	selects.change(function(e)
 	{
-		console.log('change');
 		updateAddToCartURL();
 	});
 

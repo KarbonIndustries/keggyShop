@@ -1,4 +1,4 @@
-<?php require_once('..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'init.php'); ?>
+<?php require_once('..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . '_init.php'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -32,6 +32,12 @@
 	<div id="contentShell">
 		<div id="slideshow">
 			<img src="<?= IMG_DIR ?>slideshow/combo_01.jpg" alt="" />
+			<?php
+			$ssImgs = glob(IMG_DIR . 'slideshow' . DS . '*.jpg');
+			foreach($ssImgs as $i)
+			{?>
+				<div style="display:none;background:url(<?= $i ?>);"></div>
+			<?}?>
 		</div>
 		<div id="itemListShell">
 			<?php
@@ -95,7 +101,6 @@
 	</div>
 	<?php
 	require_once(CONTENT_DIR . 'footer.php');
-	$ssImgs = glob(IMG_DIR . 'slideshow' . DS . '*.jpg');
 	$quotedJSArray;
 	foreach($ssImgs as $i)
 	{
