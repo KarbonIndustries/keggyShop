@@ -1,5 +1,5 @@
 <div id="header">
-	<div id="logoShell" class="fl"><a id="logo" href="./"><img src="<?= IMG_DIR . DS . 'keggy_logo.png' ?>" alt="" /></a></div>
+	<div id="logoShell" class="fl"><a id="logo" href="<?= HOST ?>"><img src="<?= IMG_DIR . DS . 'keggy_logo.png' ?>" alt="" /></a></div>
 	<div class="fl shopWord">Shop</div>
 	<div class="fl" id="jumpLinks"><a href="<?= HOST ?>#viewBelts">Belts</a><a href="<?= HOST ?>#viewRings">Rings</a></div>
 	<div class="fr p10"><a class="visitKeggyLink" href="<?= MAIN_SITE_URL ?>">&laquo; back to keggy.com</a><span class="hSpace26"></span><a class="cartLink" href="<?= CART_URL ?>">View Cart</a></div>
