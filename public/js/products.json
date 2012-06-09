@@ -10,7 +10,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -23,7 +30,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -35,7 +49,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -47,7 +68,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -59,7 +87,14 @@
 							{"name" : "Nickel", "id" : "01"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -72,7 +107,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -85,7 +127,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -95,7 +144,14 @@
 			"price"   : "39.00",
 			"color"   : [{"name" : "Gold"  , "id" : "02"}],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -105,7 +161,14 @@
 			"price"   : "39.00",
 			"color"   : [{"name" : "Gold"  , "id" : "02"}],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -118,7 +181,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -131,7 +201,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -144,7 +221,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -157,7 +241,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -170,7 +261,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -182,7 +280,14 @@
 							{"name" : "Nickel", "id" : "01"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -194,7 +299,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -207,7 +319,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -220,7 +339,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -232,7 +358,14 @@
 							{"name" : "Gold"  , "id" : "02"}
 						],
 			"options" : [
-							{"name" : "strap_color", "value" : "all"}
+							{"name" : "strap_color", "value" : "all"},
+							{"name" : "size", "value" :
+								[
+									{"label" : "Small","value" : "Small"},
+									{"label" : "Medium","value" : "Medium"},
+									{"label" : "Large","value" : "Large"}
+								]
+							}
 						]
 		},
 		{
@@ -240,101 +373,161 @@
 			"id"      : "R820EKG",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Square Enamel Ring (White)",
 			"id"      : "R820EWH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Square Enamel Ring (Pumpkin)",
 			"id"      : "R820EPU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Square Enamel Ring (Chilly)",
 			"id"      : "R820ECH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Square Cutout Ring",
 			"id"      : "R830",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Circle Enamel Dots Ring (White)",
 			"id"      : "R850EWH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Silver"  , "id" : "01"}]
+			"color"   : [{"name" : "Silver"  , "id" : "01"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Circle Enamel Dots Ring (Indigo)",
 			"id"      : "R850EIN",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Sunshine)",
 			"id"      : "R870ESU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Cerise)",
 			"id"      : "R870ECE",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Pumpkin)",
 			"id"      : "R870EPU",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Kelly Green)",
 			"id"      : "R870EKG",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		},
 		{
 			"name"    : "Dome Multi-Enamel Dot Ring (Chilly)",
 			"id"      : "R870ECH",
 			"type"    : "Ring",
 			"price"   : "39.00",
-			"color"   : [{"name" : "Gold"  , "id" : "02"}]
+			"color"   : [{"name" : "Gold"  , "id" : "02"}],
+			"options" : [
+							{"name" : "ring_size", "value" :
+								[{"label" : "7", "value" : "7"}]
+							}
+						]
 		}
 	],
 	"strap_colors" :
 	[
-		{"color_name" : "Indigo"       , "color_id" : "IN"},
-		{"color_name" : "Chilly"       , "color_id" : "CH"},
-		{"color_name" : "Mushroom"     , "color_id" : "MU"},
-		{"color_name" : "Ivory"        , "color_id" : "IV"},
-		{"color_name" : "Pearl White"  , "color_id" : "PW"},
-		{"color_name" : "Turquise"     , "color_id" : "TU"},
-		{"color_name" : "Capri"        , "color_id" : "CA"},
-		{"color_name" : "Sweet Sage"   , "color_id" : "SS"},
-		{"color_name" : "Ceramic Pink" , "color_id" : "CP"},
-		{"color_name" : "Surf Elegance", "color_id" : "SE"},
-		{"color_name" : "Cerise"       , "color_id" : "CE"},
-		{"color_name" : "Pumpkin"      , "color_id" : "PU"},
 		{"color_name" : "Black"        , "color_id" : "BL"},
-		{"color_name" : "Sunshine"     , "color_id" : "SU"}
+		{"color_name" : "Capri"        , "color_id" : "CA"},
+		{"color_name" : "Ceramic Pink" , "color_id" : "CP"},
+		{"color_name" : "Cerise"       , "color_id" : "CE"},
+		{"color_name" : "Chilly"       , "color_id" : "CH"},
+		{"color_name" : "Indigo"       , "color_id" : "IN"},
+		{"color_name" : "Ivory"        , "color_id" : "IV"},
+		{"color_name" : "Mushroom"     , "color_id" : "MU"},
+		{"color_name" : "Pearl White"  , "color_id" : "PW"},
+		{"color_name" : "Pumpkin"      , "color_id" : "PU"},
+		{"color_name" : "Surf Elegance", "color_id" : "SE"},
+		{"color_name" : "Sweet Sage"   , "color_id" : "SS"},
+		{"color_name" : "Sunshine"     , "color_id" : "SU"},
+		{"color_name" : "Turquoise"    , "color_id" : "TU"}
 	]
 }

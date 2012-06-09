@@ -41,6 +41,7 @@
 			?>
 				<div class="vSpace14"></div>
 				<div class="itemGroup">
+					<a id="viewBelts"/>
 					<h1 class="groupTitle">Belts</h1>
 					<?foreach($belts as $b)
 					{?>
@@ -50,7 +51,7 @@
 									<img src="<?= IMG_DIR . strtolower($b->type()) . DS . IMG_SIZE_2_DIR . DS . $b->id() ?>_01.jpg" alt="" />
 								</div>
 								<div class="itemInfo">
-									<p><?= $b->name() ?></p>
+									<p class="itemTitle"><?= $b->name() ?></p>
 									<p>$<?= $b->price() ?></p>
 								</div>
 							</div>
@@ -68,6 +69,7 @@
 			?>
 				<div class="vSpace30"></div>
 				<div class="itemGroup">
+					<a id="viewRings"/>
 					<h1 class="groupTitle">Rings</h1>
 					<?foreach($rings as $r)
 					{?>
@@ -77,7 +79,7 @@
 									<img src="<?= IMG_DIR . strtolower($r->type()) . DS . IMG_SIZE_2_DIR . DS . $r->id() ?>_01.jpg" alt="" />
 								</div>
 								<div class="itemInfo">
-									<p><?= $r->name() ?></p>
+									<p class="itemTitle"><?= $r->name() ?></p>
 									<p>$<?= $r->price() ?></p>
 								</div>
 							</div>
@@ -108,7 +110,7 @@
 		
 		function swapHeaderImg()
 		{
-			$('div#slideshow').find('img').attr('src',ssImgs[ssIndex]);
+			$('div#contentShell').find('div#slideshow').find('img').attr('src',ssImgs[ssIndex]);
 			ssIndex = (ssIndex === (ssImgs.length - 1)) ? 0 : ++ssIndex;
 		}
 	</script>
