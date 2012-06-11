@@ -24,7 +24,7 @@ div#contentShell div#itemListShell div.itemShell{float:left;margin-top:10px;back
 div#contentShell div#itemListShell div.itemShell div.imgShell{border:6px solid transparent;}
 div#contentShell div#itemListShell div.itemShell img{display:block;width:222px;height:147px;}
 div#contentShell div#itemListShell div.itemShell div.itemInfo{padding:6px;}
-div#contentShell div#itemListShell div.itemShell div.itemInfo p{padding:0;margin:5px 0;color:#555;}
+div#contentShell div#itemListShell div.itemShell div.itemInfo p{padding:0;margin:5px 0;color:#555;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:222px;}
 div#contentShell h1#productItemTitle{margin:0 0 15px;font-size:24px;}
 div#contentShell h1#productItemTitle a{font-size:24px;color:#25A29E;}
 div#contentShell div#productItemImageShell{float:left;width:570px;}
@@ -34,7 +34,7 @@ div#contentShell div#productItemImageShell div#productItemThumbnails{background:
 div#contentShell div#productItemImageShell div#productItemThumbnails a{float:left;margin-right:4px;}
 div#contentShell div#productItemImageShell div#productItemThumbnails a img{border:none;width:80px;height:53px;}
 div#contentShell div#productItemInfoShell{float:right;width:360px;padding:10px;background:#FFFFFF;}
-div#contentShell div#productItemInfoShell h2.productInfoTitle{margin:0 0 10px;font-size:16px;font-weight:bold;color:#555555;}
+div#contentShell div#productItemInfoShell h2.productInfoTitle{margin:0 0 10px;font-size:16px;font-weight:bold;color:#555555;line-height:1.5em;}
 div#contentShell div#productItemInfoShell h3{margin:0 0 5px;font-size:14px;}
 div#contentShell div#productItemInfoShell div#productItemStrapColorShell,div#contentShell div#productItemInfoShell div#productItemQuantityShell,div#contentShell div#productItemInfoShell div#productItemRingSizeShell,div#contentShell div#productItemInfoShell div#productItemBeltSizeShell{margin-bottom:10px;}
 div#contentShell div#productItemInfoShell input#productItemQuantity{width:80px;border:1px solid #BBB;padding:3px;font-size:14px;}
